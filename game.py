@@ -1,3 +1,6 @@
+import array
+movements = {"north":array([1,0,0]),
+             "south":array([-1,0,0])}
 actions = ("quit"
            "save"
            "load"
