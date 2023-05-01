@@ -1,6 +1,5 @@
 import array
-movements = {"north":array([1,0,0]),
-             "south":array([-1,0,0])}
+import rooms
 actions = ("quit"
            "save"
            "load"
