@@ -1,5 +1,6 @@
-import array
-import rooms
+from numpy import array
+import pickle
+from Rooms import rooms, MOVEMENT
 actions = ("quit"
            "save"
            "load"
