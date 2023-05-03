@@ -12,8 +12,6 @@ class Player():
         self.inventory = []
         self.name = input("What will your adventurer's name be?\n")
         print(f"Welcome brave adventurer, {self.name}")
-    def move(self, move):
-        self.position = tuple(array(self.position) + MOVEMENT.get(move, array([0,0,0])))
 
 player = Player()	    
 def main(player):
