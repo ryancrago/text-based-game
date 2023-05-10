@@ -56,3 +56,10 @@ class Room():
         if thing == 'key':
             self.allowed_movements.append('down')
 rooms = {}
+r = Room()
+r.room_items.append('rusty key')
+r.usable_items['torch'] = "You use the torch to light up the room."
+r.allowed_movements.append('east')
+r.descriptions[(('rusty key',),('torch'))] = "You can see a door but it seems to be locked. But it's so dark you can't find the lock."
+r.descriptions[(("rusty key",), ())] = "The torch lit up an abnormally"
+r.descriptions[((),())] = "You successfully used the rusty key. Luckily the rust didn't get in the way."
